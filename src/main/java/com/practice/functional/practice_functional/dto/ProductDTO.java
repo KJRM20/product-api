@@ -4,6 +4,8 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Positive;
 
 public record ProductDTO(
+  String id,
+
   @NotBlank(message = "El nombre del producto no puede estar vacío")
   String name,
 
